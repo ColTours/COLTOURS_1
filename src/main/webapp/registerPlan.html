@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>  <!-- index.js -->
+        <link href="css/index.css" rel="stylesheet">
+        <title>Registro - Plan/Destino</title>
+    </head>
+    <body> 
+        
+        <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.png" alt="logo" width="200">
+                    </a>
+
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toogle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    
+                </div>
+            </nav>
+        
+        
+        
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Crear Plan - Destino</a>
+        </nav>
+        <main class="p-4 d-flex justify-content-center">
+            <div class="card sizeDiv">
+                <div class="card-body">
+                    <form id="form-registerPlan" class="pb-4">   <!-- form-register --> 
+                        <div class="form-group">
+                            <label for="input-id_destino">Id del destino</label>
+                            <input type="text" class="form-control" id="input-id_destino" placeholder="Id del destino" required>
+                        </div>
+                        <!--
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="input-contrasena">Contraseña</label>
+                                <input type="password" class="form-control" id="input-contrasena" placeholder="Contraseña" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="input-contrasena-repeat">Repetir contraseña</label>
+                                <input type="password" class="form-control" id="input-contrasena-repeat" placeholder="Repetir contraseña" required>
+                            </div>
+                        </div>  --> 
+                        
+                        <div class="form-group">
+                            <label for="input-planes">Descripción del Plan/Destino</label>
+                            <input type="text" class="form-control" id="input-planes" placeholder="Descripción" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-precio">Precio</label>
+                            <input type="text" class="form-control" id="input-precio" placeholder="Precio" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-ciudad">Ciudad</label>
+                            <input type="text" class="form-control" id="input-ciudad" placeholder="Ciudad" required>
+                        </div>
+                        
+                        <!--
+                        <div class="form-group">
+                            <label for="input-direccion">Dirección</label>
+                            <input type="text" class="form-control" id="input-direccion" placeholder="direccion" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="input-ciudad">Ciudad</label>
+                            <input type="text" class="form-control" id="input-ciudad" placeholder="ciudad" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="input-telefono">Teléfono</label>
+                            <input type="text" class="form-control" id="input-telefono" placeholder="telefono" required>
+                        </div>
+                                 --> 
+                        
+                                                                     <!-- register-btn --> 
+                        <input type="submit" class="btn btn-primary" id="registerPlan-btn" value="Registrar Destino" />
+                    </form>
+                    <div id="registerPlan-error" class="alert alert-danger d-none" role="alert"></div>
+                    <!--<a href="login.html">¿Ya tienes cuenta? Iniciar sesión</a>--> 
+                </div>
+            </div> 
+        </main>
+    </body>
+</html>
